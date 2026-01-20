@@ -173,6 +173,7 @@ body.light #preloader:after {
 
 body.light .title-section h2 {
   color: #666;
+  text-align: center;
 }
 
 body.light .title-bg {
@@ -208,7 +209,6 @@ body.light .about .c100>span {
 body.light .about .c100:after {
   background-color: #fff;
 }
-
 body.light .portfolio .slideshow figure {
   background-color: #fff;
 }
@@ -565,6 +565,7 @@ body.light hr.separator {
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
 }
 
@@ -1855,9 +1856,9 @@ body.blog-post article img {
   }
 
   #mobile-nav li:after {
-    width: calc(100% - 50px);
-    right: 25px;
-  }
+    width: calc(100% - 10px);
+      right: 0;
+    }
 
   #mobile-nav li a span {
     right: 35px;
@@ -1874,7 +1875,7 @@ body.blog-post article img {
   }
 
   .mobile-nav-element>div span {
-    right: 35px;
+    right: 0px;
   }
 
   .main-content {
@@ -2541,11 +2542,17 @@ body.blog-post article img {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 578px) {
   .img-mobile-about .me,.img-mobile-about .logo-about {
     display: block;
   }
   .about-section .title-section {
     margin-bottom: 40px;
   }
+    .portfolio, .contact, .blog {
+      padding: 80px 16px 40px;
+    }
+    #portfolio .main-content, #contact .main-content, #blog .main-content {
+      padding-top: 0px;
+    }
 }
