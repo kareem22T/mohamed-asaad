@@ -135,6 +135,7 @@ hr.separator {
 .custom-title {
   padding-bottom: 22px;
   font-size: 26px;
+  text-align: right;
 }
 
 /*** Light Body ***/
@@ -1224,6 +1225,7 @@ body.light hr.separator {
   padding-right: 50px;
   line-height: 21px;
   padding-top: 5px;
+  text-align: right;
 }
 
 .contact .custom-span-contact i {
@@ -1245,6 +1247,7 @@ body.light hr.separator {
 
 .contact ul.social {
   margin-right: -5px;
+  text-align: right;
 }
 
 .contact ul.social li {
@@ -1341,6 +1344,7 @@ body.light hr.separator {
   background-color: #252525;
   padding: 20px 25px 25px 25px;
   border-radius: 0 0 5px 5px;
+  text-align: right;
 }
 
 .blog .post-content .entry-header h3 {
@@ -1810,7 +1814,7 @@ body.blog-post article img {
         top: 0;
       }
     
-      .home .logo img {
+      .home .logo img, .img-mobile-about .logo-about {
         position: absolute;
         bottom: -10px;
         right: 50%;
@@ -2290,7 +2294,7 @@ body.blog-post article img {
 .company-logo {
   width: 50px;
   height: 50px;
-  background: #1a1a1a;
+  background: #fff;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -2515,8 +2519,13 @@ body.blog-post article img {
       flex-direction: column;
     }
 }
-
-.img-mobile-about img {
+.img-mobile-about {
+  position: relative;
+}
+.img-mobile-about .logo-about {
+  display: none;
+}
+.img-mobile-about .me {
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -2533,7 +2542,7 @@ body.blog-post article img {
 }
 
 @media (max-width: 480px) {
-  .img-mobile-about img {
+  .img-mobile-about .me,.img-mobile-about .logo-about {
     display: block;
   }
   .about-section .title-section {
