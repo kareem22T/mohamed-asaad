@@ -1487,12 +1487,14 @@ body.blog-post article img {
     max-width: 600px;
   }
 }
-
+.home .home-details-container {
+  position: relative;
+}
+  
 @media (min-width: 992px) {
   .home .home-details-container {
     width: 100%;
     height: 100vh;
-    position: relative;
   }
 
   body.home-page {
